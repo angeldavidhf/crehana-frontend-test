@@ -1,0 +1,33 @@
+.ant-layout-header {
+    background-color: #4921F4 !important;
+    background: #4921F4 !important;
+    color: rgba(255, 255, 255, .85) !important;
+}
+.ant-menu {
+    background-color: #4921F4 !important;
+    background: #4921F4 !important;
+    color: rgba(255, 255, 255, .85) !important;
+}
+.ant-menu-horizontal {
+    border-bottom: 1px solid #4921F4 !important;
+}
+.ant-menu-horizontal>.ant-menu-item a {
+    color: rgba(255, 255, 255, .85) !important;
+}
+.ant-menu-horizontal>.ant-menu-item-selected a {
+    font-weight: bold;
+}
+.ant-menu-item-selected, .ant-menu-item-selected a, .ant-menu-item-selected a:hover {
+    font-weight: bold;
+}
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+}
+
+.logo {
+    float: left;
+    padding: 0 20px;
+}
