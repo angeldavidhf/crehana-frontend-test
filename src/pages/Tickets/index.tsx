@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button, Col } from "antd";
+
+import './assets/styles.css';
 
 export default function Tickets() {
+    const [ money ] = useState([25, 25, 50]);
+    const [ change, setChange ] = useState('');
 
     const changeTickets = (money: Array<number>) => {
         let x25 = 0, x50 = 0;
@@ -34,6 +39,12 @@ export default function Tickets() {
     }
 
     return (
-        <h1>Vueltos de boletos</h1>
+        <>
+            <h1>Vueltos de boletos</h1>
+            <p>Tiene dinero suficiente para los vueltos? {change}</p>
+            <Col className="gutter-row" span={24}>
+                <Button type="primary" onClick={() => setChange(changeTickets(money))}>Lanzar Prueba</Button>
+            </Col>
+        </>
     )
 }

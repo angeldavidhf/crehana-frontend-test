@@ -30,12 +30,12 @@ export default function Home() {
                     </Menu.Item>
                 </Menu>
             </Header>
-            <Content style={{ padding: '0 50px', marginTop: '50px' }}>
+            <Content className="content-home">
                 <div className="site-layout-content">
                     <Outlet />
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Crehana ©2022 Created by <a href="https://github.com/angeldavidhf" target="_blank" rel="noopener noreferrer">Angel David</a></Footer>
+            <Footer className="footer-home">Crehana ©2022 Created by <a href="https://github.com/angeldavidhf" target="_blank" rel="noopener noreferrer">Angel David</a></Footer>
         </Layout>
     )
 }
