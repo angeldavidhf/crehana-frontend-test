@@ -40,7 +40,7 @@ const LIST_COUNTRIES = gql`
 const columns: any = [
     {
         title: '',
-        key: 'emoji',    
+        key: 'emoji',
         dataIndex: 'emoji'
     },
     {
@@ -126,7 +126,7 @@ export default function Countries() {
     }
 
     if (codeId) {
-        return <Outlet />            
+        return <Outlet />
     }
 
     return (
@@ -158,7 +158,7 @@ export default function Countries() {
                         <Select.Option key={`currency-${index}`} value={opt}>{opt}</Select.Option>
                     ))
                 }
-            </Select>            
+            </Select>
             <Table columns={columns} dataSource={countries} rowKey="code"></Table>
             <Outlet></Outlet>
         </>

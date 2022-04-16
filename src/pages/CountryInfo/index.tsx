@@ -101,7 +101,7 @@ export default function CountryInfo() {
         if (!loading) {
             setCountry(data.country || {});
         }
-    }, [data]);
+    }, [loading, data, country]);
 
     if (loading || error) {
         return <>{error ? <p>{error.message}</p> : <SpinnerComponent />}</>;

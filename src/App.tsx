@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -7,7 +6,6 @@ import Home from './pages/Home';
 import Countries from './pages/Countries';
 import CountryInfo from './pages/CountryInfo';
 import Tickets from './pages/Tickets';
-
 
 function App() {
     return (
